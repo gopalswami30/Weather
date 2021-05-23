@@ -1,13 +1,60 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+  --outer-shadow-0: 0px 0px 0px #d0d0dd, 0px 0px 0px #f8f8f8;
+  --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+  --skin-clr: #fb839e;
+  --bg-black-900: #000000;
+  --bg-black-100: #dddddd;
+  --bg-black-50: #eff0f4;
+  --text-black-900: #000000;
+  --text-black-700: #555555;
+  --text-black-600: #666666;
+  --text-black-300: #bbbbbb;
 }
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--bg-black-50); */
+  box-sizing: border-box;
+}
+.mainbox {
+  display: flex;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  width: 300px;
+  height: 500px;
+  position: relative;
+  top: 200px;
+  left: 750px;
+  border-radius: 2ch;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: var(--outer-shadow);
+  align-items: center;
+}
+.inputbox {
+  width: 200px;
+  height: 30px;
+  border-radius: 2ch;
+  border: transparent;
+}
+.inputField {
+  width: 200px;
+  outline: none;
+  font-size: 20px;
+  align-items: center;
+  padding-left: 20px;
+  height: 30px;
+  border-radius: 2ch;
+  border: 1px solid var(--text-black-600);
+}
+.info {
+  margin-bottom: 40px;
+}
+.location {
+  padding-left: 30px;
+  padding-bottom: 20px;
+}
+.temp {
+  padding-left: 40px;
+  padding-bottom: 20px;
 }
